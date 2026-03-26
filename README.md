@@ -1,6 +1,6 @@
 # Hi, I'm Sayli 👋
 
-**Oracle DBA · 10 years experience · Currently exploring PostgreSQL & AWS cloud databases**
+**Oracle DBA · 12 years experience · Currently exploring PostgreSQL & AWS cloud databases**
 
 ---
 
