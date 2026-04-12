@@ -11,10 +11,11 @@
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
 ![PL/SQL](https://img.shields.io/badge/PL%2FSQL-F80000?style=flat&logo=oracle&logoColor=white)
 ![PL/pgSQL](https://img.shields.io/badge/PL%2FpgSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 
 ---
 
-### 🚀 Featured Project
+### 🚀 Featured Projects
 
 #### [pg_query_guardian](https://github.com/sskhedekar/pg_query_guardian)
 > Self-contained PostgreSQL watchdog that automatically terminates runaway SELECT queries on AWS RDS read replicas.
@@ -22,6 +23,15 @@
 Built entirely in PL/pgSQL — no Lambda, no EC2, no external dependencies. Born from a real business requirement and a frustration with fragile EC2-based solutions.
 
 ✅ pg_cron + dblink architecture &nbsp;·&nbsp; ✅ Full audit log &nbsp;·&nbsp; ✅ Exemption system &nbsp;·&nbsp; ✅ Dry-run mode
+
+---
+
+#### [pg-snap-anon](https://github.com/sskhedekar/pg_snap_anon_github)
+> Anonymize AWS RDS PostgreSQL snapshots without ever connecting to live PROD.
+
+Restores the latest automated snapshot to a temp RDS inside your VPC, anonymizes PII columns declared in `pii_config.yaml` using Faker, produces a clean output snapshot, then tears down the temp instance — PROD is never touched. Every step is checkpointed to S3, so a failed run resumes from the last completed table.
+
+✅ PROD-safe by design &nbsp;·&nbsp; ✅ Resumable runs &nbsp;·&nbsp; ✅ FDW/dblink handling &nbsp;·&nbsp; ✅ S3 audit log
 
 ---
 
