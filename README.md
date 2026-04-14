@@ -26,7 +26,7 @@ Built entirely in PL/pgSQL — no Lambda, no EC2, no external dependencies. Born
 
 ---
 
-#### [pg-snap-anon](https://github.com/sskhedekar/pg_snap_anon_github)
+#### [pg-snap-anon](https://github.com/sskhedekar/pg_snap_anon)
 > Anonymize AWS RDS PostgreSQL snapshots without ever connecting to live PROD.
 
 Restores the latest automated snapshot to a temp RDS inside your VPC, anonymizes PII columns declared in `pii_config.yaml` using Faker, produces a clean output snapshot, then tears down the temp instance — PROD is never touched. Every step is checkpointed to S3, so a failed run resumes from the last completed table.
