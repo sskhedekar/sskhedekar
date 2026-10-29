@@ -15,6 +15,16 @@
 
 ---
 
+### 🏅 Certifications
+
+<p>
+  <img src="assets/badges/aws-certified-cloud-practitioner.png" alt="AWS Certified Cloud Practitioner" title="AWS Certified Cloud Practitioner" height="130">
+  <img src="assets/badges/aws-databases-for-agentic-ai-demonstrated.png" alt="AWS Microcredential: Databases for Agentic AI" title="AWS Microcredential: Databases for Agentic AI" height="130">
+  <img src="assets/badges/clickhouse-database-associate.png" alt="ClickHouse Database Associate" title="ClickHouse Database Associate" height="130">
+</p>
+
+---
+
 ### 🚀 Featured Projects
 
 #### [pg_query_guardian](https://github.com/sskhedekar/pg_query_guardian)
