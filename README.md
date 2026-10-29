@@ -8,10 +8,9 @@
 
 ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
-![PL/SQL](https://img.shields.io/badge/PL%2FSQL-F80000?style=flat&logo=oracle&logoColor=white)
-![PL/pgSQL](https://img.shields.io/badge/PL%2FpgSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![AWS RDS](https://img.shields.io/badge/AWS%20RDS-527FFF?style=flat&logo=amazonrds&logoColor=white)
+![Aurora](https://img.shields.io/badge/Aurora-527FFF?style=flat&logo=amazonrds&logoColor=white)
+![ClickHouse](https://img.shields.io/badge/ClickHouse-FFCC01?style=flat&logo=clickhouse&logoColor=black)
 
 ---
 
@@ -36,12 +35,12 @@ Built entirely in PL/pgSQL — no Lambda, no EC2, no external dependencies. Born
 
 ---
 
-#### [pg-snap-anon](https://github.com/sskhedekar/pg-snap-anon)
-> Anonymize AWS RDS PostgreSQL snapshots without ever connecting to live PROD.
+#### [patroni-ha-aws](https://github.com/sskhedekar/patroni-ha-aws)
+> 3-node PostgreSQL 17 high-availability cluster on AWS EC2, built entirely by hand — no automation tools.
 
-Restores the latest automated snapshot to a temp RDS inside your VPC, anonymizes PII columns declared in `pii_config.yaml` using Faker, produces a clean output snapshot, then tears down the temp instance — PROD is never touched. Every step is checkpointed to S3, so a failed run resumes from the last completed table.
+Every component was installed, configured and verified manually to understand HA internals: etcd leader election, WAL streaming replication, HAProxy health-check routing, Keepalived VIP failover, and pgBackRest S3 backups taken from the standby.
 
-✅ PROD-safe by design &nbsp;·&nbsp; ✅ Resumable runs &nbsp;·&nbsp; ✅ FDW/dblink handling &nbsp;·&nbsp; ✅ S3 audit log
+✅ Patroni + etcd &nbsp;·&nbsp; ✅ HAProxy read/write split &nbsp;·&nbsp; ✅ Keepalived VIP &nbsp;·&nbsp; ✅ pgBackRest to S3
 
 ---
 
